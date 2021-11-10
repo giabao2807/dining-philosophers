@@ -8,7 +8,7 @@ public class Semaphore {
 		this.bound=upperBound;
 		this.initialValue=initialValue;
 	}
-	
+	//get
 	public synchronized void up() throws InterruptedException {
 		while(this.initialValue==bound) {
 			System.out.println(Thread.currentThread().getName()+" is waiting at up");
@@ -17,6 +17,7 @@ public class Semaphore {
 		this.initialValue++;
 		this.notify();
 	}
+	//put
 	public synchronized void down() throws InterruptedException {
 		while(this.initialValue==0) {
 			System.out.println(Thread.currentThread().getName());

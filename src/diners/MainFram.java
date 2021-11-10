@@ -208,7 +208,6 @@ public class MainFram extends JFrame {
 						.addComponent(five, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
 								GroupLayout.PREFERRED_SIZE)
 						.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
-
 		pack();
 
 	}
